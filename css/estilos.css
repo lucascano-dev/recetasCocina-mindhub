@@ -1,0 +1,329 @@
+/*-----------------------Normalizacion------------------------------------------*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ========================INDEX=========================== */
+
+/*--------------------BANNER PRINCIPAL---------------------*/
+
+#banner-principal {
+  padding: 20px;
+  margin: 20px;
+  background-image: url(../img/platos-de-comida-1.jpg);
+  border-radius: 30px;
+}
+
+#marco-texto {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fffaf0;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+#texto-principal h2 {
+  text-shadow: 3px 3px 3px #f0b0b0;
+}
+
+@media (max-width: 500px) {
+  #banner-principal {
+    padding: 10px;
+    margin: 0;
+    background-image: url(../img/platos-de-comida-1.jpg);
+    border-radius: 0;
+  }
+  #marco-texto {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+  }
+}
+@media (max-width: 960px) {
+  #marco-texto {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+#marco-texto img {
+  justify-self: self-end;
+  width: 100%;
+  /*height: 250px;*/
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+#texto-principal {
+  margin: 10px;
+  width: 80vw;
+}
+
+#texto-principal h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+#texto-principal h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+#texto-principal p {
+  padding: 10px 0px 0px 0px; /* superior, derecho, inferior e izquierdo */
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+/* -----------------------Carrousel---------------------------*/
+
+#carrusel-imagenes {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+/*--------------------Ultimas recetas------------------------*/
+
+#ultimas-recetas {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fdedca;
+  border: solid black 1px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#marco-ultimas-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 500px));
+  justify-content: center;
+}
+
+#ultimas-recetas h2 {
+  text-align: center;
+  font-size: 6vh;
+}
+
+#ultimas-recetas article {
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  background-color: #ffb178;
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 3px #f0b0b0;
+}
+
+#ultimas-recetas img {
+  border-radius: 30px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#ultimas-recetas p {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#ultimas-recetas a {
+  color: black;
+  font-size: larger;
+  text-decoration: none;
+}
+/*-----------------Footer------------------*/
+footer {
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 25px;
+}
+
+footer i {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+/*==============NOSOTROS===================*/
+
+/*-----------Sobre nosotros-------------*/
+
+#marco-texto-nosotros {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid;
+  background-color: #fdedca;
+  border-radius: 20px;
+}
+
+#marco-texto-nosotros h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.content-imagen {
+  display: flex;
+}
+
+.content-imagen img {
+  max-width: 500px;
+  max-height: 300px;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 800px) {
+  .content-imagen {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .row-reverse {
+    flex-direction: column-reverse;
+  }
+  #marco-texto-nosotros {
+    padding: 20px;
+    margin: 0px;
+    border: 1px solid;
+    background-color: #fdedca;
+    border-radius: 20px;
+  }
+
+  .content-imagen img {
+    width: 70vw;
+    max-width: 500px;
+    max-height: 300px;
+    padding: 20px;
+    border-radius: 50px;
+  }
+}
+
+/*=================Recetas==================*/
+
+.marco-general {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fdedca;
+  border: solid black 1px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.marco-general h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#recetas-tipos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 600px));
+  justify-content: center;
+}
+
+#recetas-tipos h3 {
+  font-size: 30px;
+}
+
+#recetas-tipos a {
+  text-decoration: none;
+  color: #000000;
+}
+.marco-general a {
+  margin: 20px;
+  background-color: #ffb178;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 10px 10px 3px #f0b0b0;
+}
+
+.marco-general a img {
+  margin: 30px;
+  width: 80%;
+  height: 350px;
+  border-radius: 30px;
+}
+
+.marco-general a {
+  display: flex;
+  border-radius: 30px;
+}
+
+.texto-recetas {
+  margin: 30px;
+}
+
+/*==========Categoria de recetas ===============*/
+
+.marco-general h1 {
+  text-shadow: 3px 3px 3px #f0b0b0;
+}
+
+.marco-general article h3 {
+  text-shadow: 3px 3px 3px #6b6767;
+}
+
+/* ======= Detalle de recetas ========= */
+
+.principal {
+  margin: 10px;
+  border-radius: 30px;
+  background-color: #fdedca;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.principal .image {
+  border-radius: 20px;
+  width: 30%;
+  height: fit-content;
+}
+.container-stars {
+  display: flex;
+  flex-direction: row;
+  color: #f5f225;
+  align-items: center;
+  justify-content: center;
+  gap: 6spx;
+}
+.container-title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media (max-width: 500px) {
+  .principal {
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+  }
+  .principal .image {
+    width: 100%;
+  }
+}

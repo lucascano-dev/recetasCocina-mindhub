@@ -1,0 +1,77 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#encabezado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.buscador input {
+  height: 30px;
+  width: 300px;
+  padding: 5px 10px;
+  padding-left: 30px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #303030;
+}
+
+.buscador i {
+  position: relative;
+  left:27px;
+  font-size: 14px;
+  color: #303030;
+  user-select: none;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  margin: 10px;
+  background-color: #FFB178; /*Color de referencia en Rueda de colores adobe*/
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 300ms;
+  color: #303030;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a:hover {
+  background-color: #FDEDCA;
+  cursor: pointer;
+  transition: 300ms;
+ }
+
+ .navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}

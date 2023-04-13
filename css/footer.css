@@ -1,0 +1,29 @@
+
+footer {
+  margin-top: 15px;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer i {
+  font-size: 42px;
+  transition-duration: 300ms;
+}
+
+footer i:hover {
+  transform: scale(1.2);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+@media (max-width:500px) {
+  footer{
+    flex-direction: column;
+  }
+  
+}

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  width: 100vw;
+  padding: 20px 0;
+  height: auto;
+  background-color: tan;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.principal input {
+  background: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 8px 10px;
+  font-family: "Roboto";
+  color: #303030;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+.principal label {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: tan;
+  width: fit-content;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+.principal input:focus {
+  outline: none;
+}
+
+fieldset {
+  padding: 10px 20px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dificultad {
+  margin-bottom: 10px;
+}
+
+.publicar {
+  width: 90px;
+  height: 35px;
+  padding: 10px;
+  background-color: rgb(241, 255, 118);
+  border: none;
+  border-radius: 5px;
+  transition-duration: 300ms;
+}
+
+.publicar:hover {
+  transform: scale(1.1);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
